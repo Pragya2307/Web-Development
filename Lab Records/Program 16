@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        .hidden { 
+            display: none; 
+        }
+        .highlight { 
+            background-color: yellow; 
+            padding: 10px; 
+            border: 2px solid orange; 
+        }
+    </style>
+</head>
+<body>
+
+    <h2 id="myHeader">Toggle Demo</h2>
+    <p id="myParagraph">This is a paragraph you can hide or style!</p>
+
+    <button onclick="toggleVisibility()">Show/Hide Element</button>
+    <button onclick="toggleStyle()">Toggle CSS Class</button>
+
+    <script>
+        
+        function toggleVisibility() {
+            
+            const element = document.getElementById("myParagraph");
+            
+        
+            element.classList.toggle("hidden");
+        }
+
+    
+        function toggleStyle() {
+          
+            const header = document.querySelector("#myHeader");
+            
+          
+            header.classList.toggle("highlight");
+        }
+    </script>
+
+</body>
+</html>
