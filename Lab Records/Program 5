@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semantic Tafs</title>
+</head>
+
+<body>
+
+    
+    <nav>
+        <h2>My Website</h2>
+        <a href="#">Home</a> 
+        <a href="#">About</a> 
+        <a href="#">Contact</a>
+    </nav>
+
+    
+    <section>
+        <h2>Main Section</h2>
+
+        <article>
+            <h3>Article 1</h3>
+            <p>
+                This is an article section. It contains independent
+                and meaningful content.
+            </p>
+        </article>
+
+        <article>
+            <h3>Article 2</h3>
+            <p>
+                Articles can be reused or distributed independently.
+            </p>
+        </article>
+    </section>
+
+    
+    <aside>
+        <h3>Related Information</h3>
+        <p>
+            This is an aside section used for advertisements,
+            links, or additional information.
+        </p>
+    </aside>
+
+
+    <footer>
+        <p>
+            © 2026 My Website. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
