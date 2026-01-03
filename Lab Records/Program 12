@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Check the Console (F12) to see the results!</h2>
+    <script>
+      
+        let age = 18;
+        if (score >= 18) { console.log("Can vote"); } 
+        else { console.log("Can't Vote"); }
+
+        
+      
+        for (let i = 1; i <= 3; i++) { console.log(i); }
+
+        
+
+        let w = 1;
+        while (w <= 3) { console.log(w); w++; }
+
+      
+
+        let d = 1;
+        do { console.log(d); d++; } while (d <= 3);
+    </script>
+</body>
+</html>
