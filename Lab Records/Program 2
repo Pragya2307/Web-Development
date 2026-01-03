@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Links, Images and Lists</title>
+</head>
+
+<body>
+
+    <h1>HTML Elements Demonstration</h1>
+
+    
+    <h2> Link</h2>
+    <p>
+        Visit 
+        <a href="https://www.google.com" target="_blank">Google</a>
+        
+    </p>
+
+    
+    <h2>HTML Image</h2>
+    <img src="https://via.placeholder.com/200" alt="Sample Image">
+
+    
+    <h2>Unordered List</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+  
+    <h2>Ordered List</h2>
+    <ol>
+        <li>BreakFast</li>
+        <li>Dinner</li>
+        <li>Lunch</li>
+    </ol>
+
+  
+    <h2>Nested List</h2>
+    <ul>
+        <li>Frontend
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </li>
+        <li>Backend
+            <ol>
+                <li>Python</li>
+                <li>Java</li>
+            </ol>
+        </li>
+    </ul>
+
+</body>
+</html>
+
