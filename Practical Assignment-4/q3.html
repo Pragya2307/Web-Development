@@ -2,16 +2,63 @@
 <html>
 <head>
     <title>Spread Operator</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .result {
+            font-weight: bold;
+            color: #007bff;
+            font-size: 20px;
+        }
+    </style>
 </head>
+
 <body>
-    <script>
-        let arr1 = [1, 2, 3];
-let arr2 = [4, 5, 6];
 
-let mergedArray = [...arr1, ...arr2];
+<div class="container">
+    <h2>Spread Operator Example</h2>
+    <p>Array 1: [1, 2, 3]</p>
+    <p>Array 2: [4, 5, 6]</p>
+    <p class="result" id="output"></p>
+</div>
 
-document.write(mergedArray);
+<script>
+    let arr1 = [1, 2, 3];
+    let arr2 = [4, 5, 6];
 
-    </script>
-    </body>
-    </html>
+    let mergedArray = [...arr1, ...arr2];
+
+    document.getElementById("output").innerText =
+        "Merged Array: [" + mergedArray.join(", ") + "]";
+</script>
+
+</body>
+</html>
