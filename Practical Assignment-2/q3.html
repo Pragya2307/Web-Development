@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Focus Transition</title>
+  <style>
+    input[type="text"] {
+      border: 1px solid gray;
+      padding: 8px;
+      font-size: 16px;
+      transition: border-color 0.4s, transform 0.4s;
+    }
+
+    input[type="text"]:focus {
+      border-color: brightgreen;
+      transform: rotate(1deg);
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <input type="text" placeholder="Enter text here">
+
+</body>
+</html>

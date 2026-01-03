@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox Media Query Example</title>
+  <style>
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 20px auto;
+      border: 2px solid black;
+      padding: 10px;
+    }
+
+    .box {
+      width: 80px;
+      height: 80px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 80px;
+      font-weight: bold;
+      border: 1px solid blue;
+    }
+
+    
+    @media (max-width: 600px) {
+      .flex-container {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="flex-container">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+  </div>
+
+</body>
+</html>
