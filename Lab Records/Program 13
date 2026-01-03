@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Basics</title>
+</head>
+<body>
+    <h1>Check the Console (F12) to see results</h1>
+
+    <script>
+      
+        const category = "Learning JS"; 
+        var user = "Student";           
+        
+        if (true) {
+            let status = "Active";      
+            console.log("Scope Demo: " + status);
+        }
+
+    
+        
+        function checkValue(num) {
+            
+            if (num > 5) {
+                return "Greater than 5";
+            } else {
+                return "5 or less";
+            }
+        }
+
+    
+        console.log("Function Demo: " + checkValue(7));
+
+      
+        
+        for (let i = 1; i <= 3; i++) {
+            console.log("For count: " + i);
+        }
+
+      
+        let w = 1;
+        while (w <= 2) {
+            console.log("While count: " + w);
+            w++;
+        }
+
+        
+        let d = 1;
+        do {
+            console.log("Do-While count: " + d);
+            d++;
+        } while (d <= 2);
+
+    </script>
+</body>
+</html>
