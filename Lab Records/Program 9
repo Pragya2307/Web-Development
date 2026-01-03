@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-First Responsive Page</title>
+    <style>      
+        
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+            /* Using flexible 'rem' for padding */
+            padding: 1rem; 
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            /* Flexible width using percentage */
+            width: 100%; 
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column; /* Stacked layout for mobile */
+            gap: 1rem;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 5%;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 1rem;
+        }
+
+      
+
+        
+        @media (min-width: 600px) {
+            body {
+                padding: 2rem;
+            }
+            
+            .container {
+                flex-direction: row; /* Side-by-side layout */
+                flex-wrap: wrap;
+            }
+
+            .card {
+                flex: 1; /* Cards grow equally to fill space */
+                min-width: 250px;
+            }
+        }
+
+        
+        @media (min-width: 1024px) {
+            header {
+                font-size: 2rem;
+                padding: 4rem;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Design</h1>
+        <p>Built with a Mobile-First approach</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Flexible Units</h2>
+            <p>This layout uses <strong>%</strong>, <strong>rem</strong>, and <strong>flexbox</strong> to ensure it adapts to any screen size.</p>
+        </section>
+
+        <section class="card">
+            <h2>Media Queries</h2>
+            <p>On mobile, these cards stack. On tablets and desktops, they sit side-by-side automatically.</p>
+        </section>
+
+        <section class="card">
+            <h2>Adaptive Content</h2>
+            <p>Resize your browser window to see the layout shift and the text adjust.</p>
+        </section>
+    </main>
+
+</body>
+</html>
