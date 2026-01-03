@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2 id="title">Old Title</h2>
+    <div class="message">Original text.</div>
+    
+    <button onclick="changeContent()">Update Page</button>
+
+    <script>
+        function changeContent() {
+            
+            const heading = document.getElementById("title");
+            const box = document.querySelector(".message");
+
+          
+            heading.innerHTML = "New Title Updated!";
+            box.innerHTML = "<strong>The content was changed using JS!</strong>";
+            
+          
+            box.style.color = "blue";
+        }
+    </script>
+
+</body>
+</html>
