@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Listener Example</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input {
+            padding: 8px;
+            margin-top: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Event Listener Demo</h2>
+
+  
+    <button id="btn">Click Me</button>
+    <button id="remove">Remove Click Event</button>
+
+    <p id="output"></p>
+
+
+    <input type="text" id="textBox" placeholder="Type here">
+    <p id="keyOutput"></p>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const removeBtn = document.getElementById("remove");
+        const output = document.getElementById("output");
+        const textBox = document.getElementById("textBox");
+        const keyOutput = document.getElementById("keyOutput");
+
+        function showMessage() {
+            output.textContent = "Button was clicked!";
+        }
+
+        
+        btn.addEventListener("click", showMessage);
+
+        
+        removeBtn.addEventListener("click", () => {
+            btn.removeEventListener("click", showMessage);
+            output.textContent = "Click event removed!";
+        });
+
+        // Keyboard event
+        textBox.addEventListener("keydown", (event) => {
+            keyOutput.textContent = "Key pressed: " + event.key;
+        });
+    </script>
+
+</body>
+</html>
 
