@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        * {
+            font-family: 'Verdana, sans-serif';
+            margin-bottom: 10px;
+        }
+
+        
+        h1, h2 {
+            color: #2c3e50;
+            text-transform: uppercase;
+            border-bottom: 2px solid #eee;
+        }
+
+        
+        #main-title {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        
+        .info-box {
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #e67e22;
+        }
+
+        
+        div span {
+            color: #e74c3c;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-title">CSS Selector Demonstration</h1>
+
+    <h2>Grouped Heading (H2)</h2>
+    <h3>Grouped Heading (H3)</h3>
+
+    <div class="info-box">
+        This is a paragraph inside a <strong>class</strong> selector.
+    </div>
+
+    <div>
+        <p>This is a regular div. Inside here, the <span>descendant selector</span> makes this text red and bold.</p>
+    </div>
+
+    <p>This <span>span</span> is NOT inside a div, so it stays normal.</p>
+
+</body>
+</html>
