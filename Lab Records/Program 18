@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        button { margin: 5px; padding: 8px 12px; }
+        ul { margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>DOM Manipulation Example</h2>
+
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="removeItem()">Remove Last Item</button>
+    <button onclick="modifyItem()">Modify First Item</button>
+
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <script>
+        const list = document.getElementById("list");
+
+      
+        function addItem() {
+            const li = document.createElement("li");
+            li.textContent = "New Item";
+            list.appendChild(li);
+        }
+
+        
+        function removeItem() {
+            if (list.lastElementChild) {
+                list.removeChild(list.lastElementChild);
+            }
+        }
+
+        
+        function modifyItem() {
+            if (list.firstElementChild) {
+                list.firstElementChild.textContent = "Modified Item";
+            }
+        }
+    </script>
+
+</body>
+</html>
