@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic HTML Page</title>
+</head>
+
+<body>
+
+    <h1>Welcome to My Web Page</h1>
+    <h2>HTML Basics</h2>
+    <h3>Text Formatting</h3>
+
+    <p>
+        HTML stands for <b>HyperText Markup Language</b>.  
+        It is used to <i>create web pages</i> and web applications.
+    </p>
+
+    <p>
+        HTML allows us to format text using tags like
+        <u>underline</u>, <b>bold</b>, and <i>italic</i>.
+    </p>
+
+    <p>
+        This text is <strong>important</strong> and this is
+        <em>emphasized</em> text.
+    </p>
+
+    <p>
+        Example of <mark>highlighted text</mark>,
+        <small>small text</small>,
+        H<sub>2</sub>O (subscript),
+        x<sup>2</sup> (superscript).
+    </p>
+
+</body>
+</html>
