@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Essentials Demo</title>
+</head>
+<body>
+
+    <h2>Form Validation & JS Logic</h2>
+    <form onsubmit="return runDemo()">
+        <label>Enter a number (1-10):</label>
+        <input type="number" id="userInput" oninput="console.log('User is typing...')">
+        <button type="submit">Run Demo</button>
+    </form>
+
+    <script>
+        
+        const TITLE = "Scope Demo"
+        var globalData = "Global Info"; // Function scope (older style)
+
+      
+        function runDemo() {
+          
+            let val = document.getElementById("userInput").value;
+
+      
+            if (val === "" || val < 1 || val > 10) {
+                alert("Invalid! Please enter a number between 1 and 10."); 
+                return false; 
+            }
+
+            alert("Valid Input! Checking loops in console...");
+
+            
+            
+            for (let i = 1; i <= val; i++) {
+                console.log("For iteration: " + i);
+            }
+
+            
+            let w = val;
+            while (w > 0) {
+                console.log("While count: " + w);
+                w--;
+            }
+
+            c
+            let d = 0;
+            do {
+                console.log("Do...While executed once for: " + val);
+                d++;
+            } while (d < 0);
+
+            return false; // Keep page from refreshing for the demo
+        }
+    </script>
+</body>
+</html>
