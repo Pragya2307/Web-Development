@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Demo</title>
+
+    <style>
+        
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .box {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        
+        #main {
+            border: 3px solid black;
+            padding: 15px;
+        }
+
+        
+        #main p {
+            color: darkblue;
+            font-size: 16px;
+        }
+
+        
+        h1, h2 {
+            color: darkred;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Selectors</h1>
+    <h2>Demonstration</h2>
+
+    <div id="main">
+        <p>This paragraph is styled using a descendant selector.</p>
+
+        <div class="box">
+            This div is styled using a class selector.
+        </div>
+
+        <div class="box">
+            Another element using the same class selector.
+        </div>
+    </div>
+
+</body>
+</html>
