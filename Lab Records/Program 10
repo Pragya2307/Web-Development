@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Demo</title>
+    <style>
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            
+            padding: 2vw; 
+            line-height: 1.6;
+        }
+
+        
+        .header-section {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+    
+        .highlight-text {
+            color: #f1c40f;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        
+        .main-container {
+            display: flex;
+            flex-direction: column; 
+            gap: 20px;
+        }
+
+        .card {
+            
+            width: 100%; 
+            background: #ecf0f1;
+            padding: 1.5rem;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+        }
+
+    
+        
+        @media screen and (min-width: 768px) {
+            .main-container {
+                flex-direction: row; 
+            }
+
+            .card {
+                
+                flex: 1; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-section">
+        <h1>Welcome to My <span class="highlight-text">Responsive</span> Page</h1>
+        <p>This layout adapts based on your screen size.</p>
+    </div>
+
+    <div class="main-container">
+        <div class="card">
+            <h3>Column 1</h3>
+            <p>On mobile, this card takes up <span class="highlight-text">100% width</span>. On desktop, it sits side-by-side with others.</p>
+        </div>
+
+        <div class="card">
+            <h3>Column 2</h3>
+            <p>We use <strong>media queries</strong> to detect the browser width and update the CSS flex-direction.</p>
+        </div>
+    </div>
+
+</body>
+</html>
